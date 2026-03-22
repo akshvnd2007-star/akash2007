@@ -1,0 +1,111 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #00c6ff;
+    color: black;
+}
+
+/* SECTION */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+/* PROFILE */
+.profile {
+    width: 140px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.cert-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cert-img:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background: #00c6ff;
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+/* SKILL BARS */
+.bar {
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.fill {
+    height: 10px;
+    background: #00c6ff;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+}
