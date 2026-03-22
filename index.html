@@ -18,54 +18,47 @@
 </header>
 
 <nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certificates">Certificates</a>
-<a href="#contact">Contact</a>
+<a onclick="openTab('about')">About</a>
+<a onclick="openTab('skills')">Skills</a>
+<a onclick="openTab('projects')">Projects</a>
+<a onclick="openTab('certificates')">Certificates</a>
+<a onclick="openTab('contact')">Contact</a>
 </nav>
 
-<!-- ABOUT -->
-<section id="about">
+<!-- TABS -->
+
+<section id="about" class="tab active">
 <div class="card">
 <h2>👤 About Me</h2>
-<img src="images/dp.jpg" class="profile">
-
-<p>
-I am Akash V from Azhikode, Kerala, pursuing B.Tech in CSE at VJEC Kannur.
-I love programming, building projects, and exploring new technologies.
-</p>
+<p>I am Akash V from Azhikode, Kerala...</p>
 </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="tab">
 <div class="card">
 <h2>💻 Skills</h2>
-
-<p>C</p><div class="bar"><div class="fill" style="width:80%"></div></div>
-<p>Python</p><div class="bar"><div class="fill" style="width:75%"></div></div>
-<p>JavaScript</p><div class="bar"><div class="fill" style="width:60%"></div></div>
-
-<h3>🌍 Languages</h3>
-<p>Malayalam</p><div class="bar"><div class="fill" style="width:100%"></div></div>
-<p>English</p><div class="bar"><div class="fill" style="width:85%"></div></div>
-<p>Hindi</p><div class="bar"><div class="fill" style="width:50%"></div></div>
-
+<p>C, Python, JavaScript</p>
 </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="tab">
 <div class="card">
 <h2>🚀 Projects</h2>
+<p>Your projects here</p>
+</div>
+</section>
 
-<h3>Animated Dark Web UI</h3>
-<a href="https://animated-dark-web.preview.emergentagent.com/" target="_blank" class="btn">Visit</a>
+<section id="certificates" class="tab">
+<div class="card">
+<h2>📜 Certificates</h2>
+<p>Your certificates here</p>
+</div>
+</section>
 
-<h3>Ideal Budget PC Guide</h3>
-<a href="https://ideal-budget-pc-for-dail-2tkurhk.gamma.site/" target="_blank" class="btn">Visit</a>
-
+<section id="contact" class="tab">
+<div class="card">
+<h2>📩 Contact</h2>
+<p>Email: akshvnd.2007@gmail.com</p>
 </div>
 </section>
 
