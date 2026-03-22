@@ -8,9 +8,13 @@
 
 <body>
 
+<!-- Buttons -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+<div class="theme-btn" onclick="toggleTheme()">🌙</div>
+
 <header>
     <h1>Akash V</h1>
-    <p>VJEC Kannur | Kerala</p>
+    <p id="typing"></p>
 </header>
 
 <nav>
@@ -25,13 +29,11 @@
 <section id="about">
 <div class="card">
 <h2>👤 About Me</h2>
-
 <img src="images/dp.jpg" class="profile">
 
 <p>
-I am Akash V from Azhikode, Kerala, currently pursuing B.Tech in Computer Science
-at Vimal Jyothi Engineering College, Kannur. I am passionate about programming,
-especially in C and Python, and enjoy building projects and learning new technologies.
+I am Akash V from Azhikode, Kerala, pursuing B.Tech in CSE at VJEC Kannur.
+I love programming, building projects, and exploring new technologies.
 </p>
 </div>
 </section>
@@ -41,28 +43,14 @@ especially in C and Python, and enjoy building projects and learning new technol
 <div class="card">
 <h2>💻 Skills</h2>
 
-<p>C Programming</p>
-<div class="bar"><div class="fill" style="width:80%"></div></div>
-
-<p>Python</p>
-<div class="bar"><div class="fill" style="width:75%"></div></div>
-
-<p>Git</p>
-<div class="bar"><div class="fill" style="width:70%"></div></div>
-
-<p>LaTeX</p>
-<div class="bar"><div class="fill" style="width:65%"></div></div>
+<p>C</p><div class="bar"><div class="fill" style="width:80%"></div></div>
+<p>Python</p><div class="bar"><div class="fill" style="width:75%"></div></div>
+<p>JavaScript</p><div class="bar"><div class="fill" style="width:60%"></div></div>
 
 <h3>🌍 Languages</h3>
-
-<p>Malayalam</p>
-<div class="bar"><div class="fill" style="width:100%"></div></div>
-
-<p>English</p>
-<div class="bar"><div class="fill" style="width:85%"></div></div>
-
-<p>Hindi</p>
-<div class="bar"><div class="fill" style="width:50%"></div></div>
+<p>Malayalam</p><div class="bar"><div class="fill" style="width:100%"></div></div>
+<p>English</p><div class="bar"><div class="fill" style="width:85%"></div></div>
+<p>Hindi</p><div class="bar"><div class="fill" style="width:50%"></div></div>
 
 </div>
 </section>
@@ -73,39 +61,23 @@ especially in C and Python, and enjoy building projects and learning new technol
 <h2>🚀 Projects</h2>
 
 <h3>Animated Dark Web UI</h3>
-<p>Modern animated website with dark theme.</p>
 <a href="https://animated-dark-web.preview.emergentagent.com/" target="_blank" class="btn">Visit</a>
 
-<br><br>
-
 <h3>Ideal Budget PC Guide</h3>
-<p>Presentation-based website for building a budget PC.</p>
 <a href="https://ideal-budget-pc-for-dail-2tkurhk.gamma.site/" target="_blank" class="btn">Visit</a>
 
 </div>
 </section>
 
+<!-- CERTIFICATES -->
 <section id="certificates">
 <div class="card">
 <h2>📜 Certificates</h2>
 
 <div class="grid">
-
-<div>
-<img src="images/cert1.jpg" class="cert-img">
-<p>AI Workshop Certificate - NxtWave</p>
-</div>
-
-<div>
-<img src="images/cert2.jpg" class="cert-img">
-<p>Certificate 2 Description</p>
-</div>
-
-<div>
-<img src="images/cert3.jpg" class="cert-img">
-<p>Certificate 3 Description</p>
-</div>
-
+<img src="images/cert1.jpg" onclick="openModal(this)">
+<img src="images/cert2.jpg" onclick="openModal(this)">
+<img src="images/cert3.jpg" onclick="openModal(this)">
 </div>
 
 </div>
@@ -117,17 +89,19 @@ especially in C and Python, and enjoy building projects and learning new technol
 <h2>📩 Contact</h2>
 
 <p>Email: akshvnd.2007@gmail.com</p>
+<a href="https://www.linkedin.com/in/akash-v-002739379" target="_blank" class="btn">LinkedIn</a>
 
-<a href="https://www.linkedin.com/in/akash-v-002739379" target="_blank" class="btn">
-LinkedIn Profile
-</a>
-<script src="script.js"></script>
-</body>
-</html>
 </div>
 </section>
 
+<!-- MODAL -->
+<div id="modal" onclick="closeModal()">
+<img id="modalImg">
+</div>
+
 <footer>© 2026 Akash V</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
