@@ -27,3 +27,10 @@ document.getElementById("modalImg").src=img.src;
 function closeModal(){
 document.getElementById("modal").style.display="none";
 }
+
+function openTab(tabName) {
+    const tabs = document.querySelectorAll(".tab");
+    tabs.forEach(tab => tab.classList.remove("active"));
+
+    document.getElementById(tabName).classList.add("active");
+}
