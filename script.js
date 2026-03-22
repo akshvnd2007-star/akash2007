@@ -1,31 +1,29 @@
-// Mobile Menu Toggle
-function toggleMenu() {
-    document.querySelector("nav").classList.toggle("active");
+// menu
+function toggleMenu(){
+document.querySelector("nav").classList.toggle("active");
 }
 
-// Dark / Light Mode
-function toggleTheme() {
-    document.body.classList.toggle("light");
+// theme
+function toggleTheme(){
+document.body.classList.toggle("light");
 }
 
-// Active Navbar Highlight
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+// typing
+const text="Aspiring Developer | Tech Enthusiast";
+let i=0;
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,50);
+}}
+typing();
 
-window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 60;
-        if (pageYOffset >= sectionTop) {
-            current = section.getAttribute("id");
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
-    });
-});
+// modal
+function openModal(img){
+document.getElementById("modal").style.display="block";
+document.getElementById("modalImg").src=img.src;
+}
+function closeModal(){
+document.getElementById("modal").style.display="none";
+}
